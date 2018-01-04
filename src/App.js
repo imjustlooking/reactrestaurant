@@ -6,12 +6,17 @@ class App extends Component {
   render () {
     return (
       <div>
-        <img id='banner' src='/image/chicknkitchn.jpg' />
-        <nav>
-          <Link to='/'> Home </Link>
-          <Link to='/locations'> Locations </Link>
-          <Link to='/menu'> Menu </Link>
-        </nav>
+        {/* <img id='banner' src='/image/friedchickenplatter.jpg' /> */}
+        <div id='navcontainer'>
+          {/* <nav> */}
+          <ul className='nav'>
+            <li><Link to='/'> Home </Link></li>
+            <li><Link to='/locations'> Locations </Link></li>
+            <li><Link to='/menu'> Menu </Link></li>
+            <li><Link to='/menu'> Reservations </Link></li>
+          </ul>
+          {/* </nav> */}
+        </div>
         <Route exact={true} path='/' component={Home} />
         <Route path='/locations' component={Locations} />
       </div>

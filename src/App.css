@@ -1,3 +1,31 @@
-#banner {
+#navcontainer{
+  background-image: url("/image/friedchickenplatter.jpg");
+  background-size: cover;
+  background-position: center;
+  /*background-repeat: no-repeat;*/
   width: 100vw;
+  height: 100vh;
 }
+
+.nav{
+    /*border:1px solid #ccc;
+    border-width:1px 0;*/
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+/*#banner {
+  width: 100vw;
+  height: 100vh;
+}*/
