@@ -6,15 +6,14 @@ class App extends Component {
   render () {
     return (
       <div>
+        <img id='banner' src='/image/chicknkitchn.jpg' />
         <nav>
           <Link to='/'> Home </Link>
           <Link to='/locations'> Locations </Link>
           <Link to='/menu'> Menu </Link>
         </nav>
-        <div>
-          <Route exact={true} path='/' component={Home} />
-          <Route path='/locations' component={Locations} />
-        </div>
+        <Route exact={true} path='/' component={Home} />
+        <Route path='/locations' component={Locations} />
       </div>
     )
   }
