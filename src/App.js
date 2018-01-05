@@ -34,7 +34,7 @@ class Locations extends Component {
   render () {
     return (
       <div className='componentSize'> <h1 id='locations'> Locations </h1>
-        <img src='https://maps.googleapis.com/maps/api/staticmap?center=8+Claymore+Hill,Singapore,SG&zoom=16&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:G%7C1.308089,103.831722&key=AIzaSyAy0PNSC9SbRpl9b31EtW9HCdcsDBD65IA' />
+        <img id='map' src='https://maps.googleapis.com/maps/api/staticmap?center=8+Claymore+Hill,Singapore,SG&zoom=16&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:G%7C1.308089,103.831722&key=AIzaSyAy0PNSC9SbRpl9b31EtW9HCdcsDBD65IA' />
         <div>
           <p> Contact: +65 1234567, gabrielulu@gmail.com <br />
               Address: 8 Claymore Hill, Singapore 229572 <br />

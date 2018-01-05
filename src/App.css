@@ -40,3 +40,15 @@
     text-decoration: none;
     color: white;
 }
+@media (max-width: 767px) {
+  #navcontainer > img {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  #menu{
+    width: 80vw;
+  }
+  #map{
+    width: 80vw;
+  }
+}
