@@ -46,9 +46,13 @@
     margin: 0 auto;
   }
   #menu{
-    width: 80vw;
+    margin-left: 0;
+    width: 100vw;
   }
   #map{
     width: 80vw;
+  }
+  .componentSize{
+    height: 56vh;
   }
 }
