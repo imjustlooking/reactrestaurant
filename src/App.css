@@ -55,4 +55,7 @@
   .componentSize{
     height: 56vh;
   }
+  #familymeal{
+    width: 100vw;
+  }
 }

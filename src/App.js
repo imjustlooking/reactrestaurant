@@ -64,7 +64,7 @@ class About extends Component {
       <div>
         <h1> About us </h1>
         <img id='chickenfam' src='image/chickenfam.svg' title='cook us please' alt='Cute chicken family' />
-        <img id='family meal' src='image/familymeal.png' title='yummy' alt='Cooked chicken family' />
+        <img id='familymeal' src='image/familymeal.png' title='yummy' alt='Cooked chicken family' />
         <p> Our founder, Colonel Gabriel Lu, has an undying love for fried chicken, so he decided to cook up a website for his imaginary fried chicken chain. <br />
             To date, we have never ever served any paying customer. I'm really just filling this paragraph up so the site looks meatier. <br />
             If you have a really good recipe to share, please contact us at gabrielulu@gmail.com
