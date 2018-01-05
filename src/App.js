@@ -21,6 +21,7 @@ class App extends Component {
           </ul>
           <img src='image/chickbannertransparent.png' />
         </div>
+        <About />
         <Locations />
         <Menu />
         {/* <Route exact={true} path='/' component={Home} />
@@ -33,12 +34,12 @@ class App extends Component {
 class Locations extends Component {
   render () {
     return (
-      <div className='componentSize'> <h1 id='locations'> Locations </h1>
-        <img id='map' src='https://maps.googleapis.com/maps/api/staticmap?center=8+Claymore+Hill,Singapore,SG&zoom=16&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:G%7C1.308089,103.831722&key=AIzaSyAy0PNSC9SbRpl9b31EtW9HCdcsDBD65IA' />
+      <div className='componentSize'>
+        <h1 id='locations'> Locations </h1>
+        <img id='map' src='https://maps.googleapis.com/maps/api/staticmap?center=8+Claymore+Hill,Singapore,SG&zoom=16&size=600x300&maptype=roadmap&markers=color:orange%7Clabel:C%7C1.308089,103.831722&key=AIzaSyAy0PNSC9SbRpl9b31EtW9HCdcsDBD65IA' />
         <div>
           <p> Contact: +65 1234567, gabrielulu@gmail.com <br />
               Address: 8 Claymore Hill, Singapore 229572 <br />
-
           </p>
         </div>
       </div>
@@ -49,28 +50,24 @@ class Locations extends Component {
 class Menu extends Component {
   render () {
     return (
-      <div> <h1> Menu </h1>
+      <div>
+        <h1> Menu </h1>
         <img id='menu' src='image/menu.png' />
-        {/* <div>
-          <p> Contact: +65 1234567, gabrielulu@gmail.com <br />
-              Address: 8 Claymore Hill, Singapore 229572 <br />
-
-          </p>
-        </div> */}
       </div>
     )
   }
 }
 
-class Home extends Component {
+class About extends Component {
   render () {
     return (
       <div>
-        <header>
-          <h1>Gabriel's Fried Chicken</h1>
-        </header>
-        <p>
-          Bring in 2018 with a burst of GFC's crunchy goodness.
+        <h1> About us </h1>
+        <img id='chickenfam' src='image/chickenfam.svg' title='cook us please' alt='Cute chicken family' />
+        <img id='family meal' src='image/familymeal.png' title='yummy' alt='Cooked chicken family' />
+        <p> Our founder, Colonel Gabriel Lu, has an undying love for fried chicken, so he decided to cook up a website for his imaginary fried chicken chain. <br />
+            To date, we have never ever served any paying customer. I'm really just filling this paragraph up so the site looks meatier. <br />
+            If you have a really good recipe to share, please contact us at gabrielulu@gmail.com
         </p>
       </div>
     )
