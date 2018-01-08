@@ -23,8 +23,6 @@
   height: 100vh;
 }
 .nav{
-    /*border:1px solid #ccc;
-    border-width:1px 0;*/
     list-style:none;
     margin:0;
     padding:0;
@@ -40,10 +38,28 @@
     text-decoration: none;
     color: white;
 }
+h1, p {
+  margin-left: 10vw;
+}
+#map{
+  display: inline-block;
+  margin-left: 10vw;
+}
+#maptext{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 1vw;
+}
+#maptext p {
+  margin: 0 auto;
+}
 #chickenfam{
+  display: block;
+  margin: 0 auto;
   width: 50vw;
   height: 55vh;
-  /*height: 50vh;*/
 }
 @media (max-width: 767px) {
   #navcontainer > img {
@@ -60,7 +76,7 @@
   .componentSize{
     height: 56vh;
   }
-  #familymeal{
-    width: 100vw;
+  #chickenfam{
+    width: 90vw;
   }
 }
