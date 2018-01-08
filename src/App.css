@@ -96,4 +96,7 @@ small {
   #chickenfam{
     width: 100vw;
   }
+  .footer {
+    height: 30vh;
+  }
 }
