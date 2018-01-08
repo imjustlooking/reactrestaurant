@@ -40,6 +40,11 @@
     text-decoration: none;
     color: white;
 }
+#chickenfam{
+  width: 50vw;
+  height: 55vh;
+  /*height: 50vh;*/
+}
 @media (max-width: 767px) {
   #navcontainer > img {
     width: 100vw;

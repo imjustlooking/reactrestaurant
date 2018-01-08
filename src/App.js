@@ -59,12 +59,27 @@ class Menu extends Component {
 }
 
 class About extends Component {
+  constructor () {
+    super()
+    this.state = {
+      imgSrc: 'image/chickenfam.svg'
+    }
+  }
+  handleMouseOver () {
+    this.setState({
+      imgSrc: 'image/familymeal.png'
+    })
+  }
+  handleMouseOut () {
+    this.setState({
+      imgSrc: 'image/chickenfam.svg'
+    })
+  }
   render () {
     return (
       <div>
         <h1> About us </h1>
-        <img id='chickenfam' src='image/chickenfam.svg' title='cook us please' alt='Cute chicken family' />
-        <img id='familymeal' src='image/familymeal.png' title='yummy' alt='Cooked chicken family' />
+        <img id='chickenfam' src={this.state.imgSrc} onMouseOver={() => this.handleMouseOver()} onMouseOut={() => this.handleMouseOut()} title='Yummy' alt='Cute chicken family' />
         <p> Our founder, Colonel Gabriel Lu, has an undying love for fried chicken, so he decided to cook up a website for his imaginary fried chicken chain. <br />
             To date, we have never ever served any paying customer. I'm really just filling this paragraph up so the site looks meatier. <br />
             If you have a really good recipe to share, please contact us at gabrielulu@gmail.com
