@@ -14,7 +14,8 @@ class App extends Component {
             <li><Scrollchor to='#menu'>Menu</Scrollchor></li>
             <li><Scrollchor to='#reservations'>Reservations</Scrollchor></li>
           </ul>
-          <img src='image/chickbannertransparent.png' />
+          <img id='banner' src='image/chickbannertransparent.png' />
+          <Scrollchor to='#about'><img id='arrow' className='bounce' src='image/icon/arrowdown.png' /></Scrollchor>
         </div>
         <Route exact={true} path='/' component={Home} />
         <Footer />
@@ -114,7 +115,7 @@ class About extends Component {
   render () {
     return (
       <div>
-        <h1> About us </h1>
+        <h1 id='about'> About us </h1>
         <img id='chickenfam' src={this.state.imgSrc} onMouseOver={() => this.handleMouseOver()} onMouseOut={() => this.handleMouseOut()} title='Yummy' alt='Cute chicken family' />
         <small> Hover to cook </small>
         <p> Our founder, Colonel Gabriel Lu, has an undying love for fried chicken, so he decided to cook up a website for his imaginary fried chicken chain. <br />
