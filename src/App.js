@@ -13,7 +13,8 @@ class App extends Component {
             <li><Link to='/'> Home </Link></li>
             <li><Scrollchor to='#locations'>Locations</Scrollchor></li>
             <li><Scrollchor to='#menu'>Menu</Scrollchor></li>
-            <li><Link to='/menu'> Reservations </Link></li>
+            <li><Scrollchor to='#reservations'>Reservations</Scrollchor></li>
+            {/* <li><Link to='/menu'> Menu </Link></li> */}
 
             {/* <li><Link to='/'> Home </Link></li>
             <li><Link to='/locations'> Locations </Link></li>
@@ -22,11 +23,26 @@ class App extends Component {
           </ul>
           <img src='image/chickbannertransparent.png' />
         </div>
+        {/* <Home /> */}
+        {/* <About />
+        <Locations />
+        <Menu /> */}
+        <Route exact={true} path='/' component={Home} />
+        {/* <Route path='/menu' component={Menu} /> */}
+        <Footer />
+      </div>
+    )
+  }
+}
+
+class Home extends Component {
+  render () {
+    return (
+      <div>
         <About />
         <Locations />
         <Menu />
-        {/* <Route exact={true} path='/' component={Home} />
-        <Route path='/locations' component={Locations} /> */}
+        <Reservations />
       </div>
     )
   }
@@ -43,7 +59,7 @@ class Locations extends Component {
             <img className='icon' src='image/icon/phone.png' alt='phone' /> +65 1234567 <br />
             <img className='icon' src='image/icon/email.png' alt='email' /> gabrielulu@gmail.com <br /> <br />
             <img className='icon' src='image/icon/address.png' alt='address' /> Fake Building, 8 Claymore Hill, Singapore 229572 <br />
-            <img className='icon' src='image/icon/reservations.png' alt='reservations' /> No reservations, walk-in only <br />
+            <img className='icon' src='image/icon/reservations.png' alt='reservations' /> Call directly for reservations<br />
           </p>
         </div>
       </div>
@@ -57,6 +73,33 @@ class Menu extends Component {
       <div>
         <h1> Menu </h1>
         <img id='menu' src='image/menu.png' />
+      </div>
+    )
+  }
+}
+
+class Footer extends Component {
+  render () {
+    return (
+      <div className='footer'>
+        <ul className='nav'>
+          <li><Link to='#'> Delivery </Link></li>
+          <li><Link to='#'> Media enquiries </Link></li>
+          <li><Link to='#'> Franchise & business opportunities </Link></li>
+          <li><Link to='#'> Careers </Link></li>
+          <li><Scrollchor to='#navcontainer'>Home</Scrollchor></li>
+        </ul>
+      </div>
+    )
+  }
+}
+
+class Reservations extends Component {
+  render () {
+    return (
+      <div>
+        <h1 id='reservations'> Reservations </h1>
+        <p> We are currently working with vendors to provide an online reservation system. </p>
       </div>
     )
   }
