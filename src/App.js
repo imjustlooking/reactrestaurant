@@ -14,6 +14,7 @@ class App extends Component {
             <li><Scrollchor to='#locations'>Locations</Scrollchor></li>
             <li><Scrollchor to='#menu'>Menu</Scrollchor></li>
             <li><Link to='/menu'> Reservations </Link></li>
+
             {/* <li><Link to='/'> Home </Link></li>
             <li><Link to='/locations'> Locations </Link></li>
             <li><Link to='/menu'> Menu </Link></li>
@@ -38,8 +39,11 @@ class Locations extends Component {
         <h1 id='locations'> Locations </h1>
         <img id='map' src='https://maps.googleapis.com/maps/api/staticmap?center=8+Claymore+Hill,Singapore,SG&zoom=16&size=600x300&maptype=roadmap&markers=color:orange%7Clabel:C%7C1.308089,103.831722&key=AIzaSyAy0PNSC9SbRpl9b31EtW9HCdcsDBD65IA' />
         <div id='maptext'>
-          <p> +65 1234567 <br /> gabrielulu@gmail.com <br />
-              <br />8 Claymore Hill, Singapore 229572 <br />
+          <p>
+            <img className='icon' src='image/icon/phone.png' alt='phone' /> +65 1234567 <br />
+            <img className='icon' src='image/icon/email.png' alt='email' /> gabrielulu@gmail.com <br /> <br />
+            <img className='icon' src='image/icon/address.png' alt='address' /> Fake Building, 8 Claymore Hill, Singapore 229572 <br />
+            <img className='icon' src='image/icon/reservations.png' alt='reservations' /> No reservations, walk-in only <br />
           </p>
         </div>
       </div>
@@ -80,6 +84,7 @@ class About extends Component {
       <div>
         <h1> About us </h1>
         <img id='chickenfam' src={this.state.imgSrc} onMouseOver={() => this.handleMouseOver()} onMouseOut={() => this.handleMouseOut()} title='Yummy' alt='Cute chicken family' />
+        <small> Hover to cook </small>
         <p> Our founder, Colonel Gabriel Lu, has an undying love for fried chicken, so he decided to cook up a website for his imaginary fried chicken chain. <br />
             To date, we have never ever served any paying customer. I'm really just filling this paragraph up so the site looks meatier. <br />
             If you have a really good recipe to share, please contact us at gabrielulu@gmail.com

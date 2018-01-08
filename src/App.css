@@ -41,6 +41,11 @@
 h1, p {
   margin-left: 10vw;
 }
+small {
+  display: block;
+  text-align: center;
+  /*margin: 0 auto;*/
+}
 #map{
   display: inline-block;
   margin-left: 10vw;
@@ -54,6 +59,9 @@ h1, p {
 }
 #maptext p {
   margin: 0 auto;
+}
+.icon {
+  height: 20px;
 }
 #chickenfam{
   display: block;
@@ -74,7 +82,7 @@ h1, p {
     width: 80vw;
   }
   .componentSize{
-    height: 56vh;
+    height: 100vh;
   }
   #chickenfam{
     width: 90vw;
