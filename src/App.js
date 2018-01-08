@@ -9,26 +9,14 @@ class App extends Component {
       <div id='body'>
         <div id='navcontainer'>
           <ul className='nav'>
-            {/* <Scrollchor to="#sample-code" className="nav-link">Sample</Scrollchor> */}
             <li><Link to='/'> Home </Link></li>
             <li><Scrollchor to='#locations'>Locations</Scrollchor></li>
             <li><Scrollchor to='#menu'>Menu</Scrollchor></li>
             <li><Scrollchor to='#reservations'>Reservations</Scrollchor></li>
-            {/* <li><Link to='/menu'> Menu </Link></li> */}
-
-            {/* <li><Link to='/'> Home </Link></li>
-            <li><Link to='/locations'> Locations </Link></li>
-            <li><Link to='/menu'> Menu </Link></li>
-            <li><Link to='/menu'> Reservations </Link></li> */}
           </ul>
           <img src='image/chickbannertransparent.png' />
         </div>
-        {/* <Home /> */}
-        {/* <About />
-        <Locations />
-        <Menu /> */}
         <Route exact={true} path='/' component={Home} />
-        {/* <Route path='/menu' component={Menu} /> */}
         <Footer />
       </div>
     )
@@ -89,6 +77,7 @@ class Footer extends Component {
           <li><Link to='#'> Careers </Link></li>
           <li><Scrollchor to='#navcontainer'>Home</Scrollchor></li>
         </ul>
+        <p> Follow us on: <Link to='#'><img className='footericon' src='image/icon/fb.png' /></Link> <Link to='#'><img className='footericon' src='image/icon/insta.svg' /></Link> </p>
       </div>
     )
   }
