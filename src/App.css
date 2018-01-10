@@ -107,6 +107,12 @@ small {
 }
 .footericon{
   height: 25px;
+  -webkit-backface-visibility: hidden;
+}
+.footericon:hover{
+  transform: translateY(1px);
+  /*transform: rotate(10deg);*/
+  /*-webkit-backface-visibility: hidden;*/
 }
 .nav a:hover{
   color: #F3ECE0;

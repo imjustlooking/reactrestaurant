@@ -78,7 +78,7 @@ class Footer extends Component {
           <li><Link to='#'> Careers </Link></li>
           <li><Scrollchor to='#navcontainer'>Home</Scrollchor></li>
         </ul>
-        <p> Follow us on: <Link to='#'><img className='footericon' src='image/icon/fb.png' /></Link> <Link to='#'><img className='footericon' src='image/icon/insta.svg' /></Link> </p>
+        <p> Follow us on: <Link to='#'><img className='footericon' src='image/icon/20673.png' /></Link> <Link to='#'><img className='footericon' src='image/icon/insta.svg' /></Link> </p>
       </div>
     )
   }
@@ -99,17 +99,20 @@ class About extends Component {
   constructor () {
     super()
     this.state = {
-      imgSrc: 'image/chickenfam.svg'
+      imgSrc: 'image/chickenfam.svg',
+      cookText: 'Hover/tap to cook (may take a second)'
     }
   }
   handleMouseOver () {
     this.setState({
-      imgSrc: 'image/familymeal.png'
+      imgSrc: 'image/familymeal.png',
+      cookText: 'Enjoy your meal!'
     })
   }
   handleMouseOut () {
     this.setState({
-      imgSrc: 'image/chickenfam.svg'
+      imgSrc: 'image/chickenfam.svg',
+      cookText: 'Hover/tap to cook (may take a second)'
     })
   }
   render () {
@@ -117,7 +120,7 @@ class About extends Component {
       <div>
         <h1 id='about'> About us </h1>
         <img id='chickenfam' src={this.state.imgSrc} onMouseOver={() => this.handleMouseOver()} onMouseOut={() => this.handleMouseOut()} title='Yummy' alt='Cute chicken family' />
-        <small> Hover to cook </small>
+        <small> {this.state.cookText} </small>
         <p> Our founder, Colonel Gabriel Lu, has an undying love for fried chicken, so he decided to cook up a website for his imaginary fried chicken chain. <br />
             To date, we have never ever served any paying customer. I'm really just filling this paragraph up so the site looks meatier. <br />
             If you have a really good recipe to share, please contact us at gabrielulu@gmail.com
